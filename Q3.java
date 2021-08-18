@@ -17,10 +17,8 @@ public class Q3
     {
         String S = this.concat(s);
         String T = this.concat(t);
-        String find = "";
         for (int i = 0; i < T.length(); i++){
             if (!this.containSub(S,T.substring(0,i))){
-                find = T.substring(i-1);
                 return S.length()-i-1 <= k? "yes" : "no";
             }
         }
