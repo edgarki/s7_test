@@ -8,7 +8,6 @@ public class Q10
             str[start] ^= str[end];
             str[end] ^= str[start];
             str[start] ^= str[end];
-     
             ++start;
             --end;
         }
